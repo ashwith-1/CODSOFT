@@ -1,0 +1,84 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap:50px;
+ background-color: #e9ebed;
+}
+.Fis{
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+ grid-row: 1/3;
+ background-color: rgb(216, 229, 229);
+}
+.i{
+   margin-top: 100px;
+   margin-left: 30px;
+   margin-bottom: 30px;
+  order:2;
+  border:3px solid #44403c;
+}
+.profiles h1{
+    margin-top: 10px;
+    order:1;
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Project{
+     grid-column: 2/3;
+    grid-row: 1;
+    background-color: #c7ced4;
+    text-align: left;
+}
+.Resume{
+    grid-column: 2/3;
+     grid-row: 2;
+     background-color: #E9EFF3;
+}
+.Contact{
+    grid-column: 3/4;
+    grid-row: 1;
+   background-color: #E5E4E2;
+}
+.Skill{
+     grid-column: 3/4;
+    grid-row: 2;
+    background-color:#f3f4f6;
+    background-image: url(skills.jpeg);
+    background-size: cover;
+    background-position: center right;
+}
+.front-end{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.back-end{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.Copyright{
+    text-align: center;
+    background-color: #c7ced4;
+}
+.About{
+    margin-top: 80px;
+}
+.call{
+    margin-right:20px;
+}
+h1{
+    font-weight: bold;
+}
+.nam{
+    text-align: end;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Project .pro{
+    margin-left: 30px;
+} 

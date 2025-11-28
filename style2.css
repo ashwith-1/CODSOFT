@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url('https://wallpapercave.com/wp/wp9423453.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #00ff88;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #00ff88;
+}
+.hero {
+    height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.hero h1 span {
+    color: #00ff88;
+}
+.hero p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+.hero button, .download-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00ff88;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.hero button:hover, .download-btn:hover {
+    transform: scale(1.05);
+}
+section {
+    padding: 90px 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 30px auto;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 1000px;
+}
+.skills h2, .work h2, .contact h2, .resume h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+.skill-box, .project-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.skill-box div, .project-box div {
+    background: #222831;
+    padding: 20px;
+    width: 28%;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+.resume p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #eaeaea;
+}
+.contact p, .resume p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact p a {
+    color: #00ff88;
+    text-decoration: none;
+}
+.contact p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    nav ul {
+        gap: 10px;
+    }
+    .skill-box, .project-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-box div, .project-box div {
+        width: 85%;
+    }
+    section {
+        padding: 60px 20px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+}
